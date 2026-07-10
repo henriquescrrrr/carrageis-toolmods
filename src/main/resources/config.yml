@@ -1,0 +1,355 @@
+# ToolMods Configuration
+# Server-side tool modifications plugin
+
+# Default language (used when PlayerSettings is not installed)
+language: en_US
+
+# Debug mode — logs detailed economy + mod operations
+debug: false
+
+# ========================
+# Economy Settings
+# ========================
+economy:
+  # "auto" tries providers in priority order; or force "multibank" / "vault"
+  mode: auto
+  priority:
+    - MultiBank
+    - Vault
+  currency-symbol: "$"
+  currency-format: "#,##0.00"
+
+# ========================
+# Mod Settings
+# ========================
+mods:
+  # When selling a modded item to a Server Shop, each mod adds
+  # (mod price × this multiplier) to the sell value.
+  mod-sell-bonus-multiplier: 0.10
+
+  # --- Pickaxe Mods ---
+  pickaxe:
+    area-mine-3x3:
+      enabled: true
+      price: 15000
+    area-mine-5x5:
+      enabled: true
+      price: 50000
+    auto-smelt:
+      enabled: true
+      price: 8000
+    telepathy:
+      enabled: true
+      price: 12000
+    vein-miner:
+      enabled: true
+      price: 1600
+      max-blocks: 64
+
+  # --- Axe Mods ---
+  axe:
+    tree-feller:
+      enabled: true
+      price: 800
+      max-blocks: 128
+      blocks-per-tick: 10
+
+  # --- Shovel Mods ---
+  shovel:
+    excavator-3x3:
+      enabled: true
+      price: 12000
+    excavator-5x5:
+      enabled: true
+      price: 40000
+    path-maker:
+      enabled: true
+      price: 5000
+
+  # --- Hoe Mods ---
+  hoe:
+    harvester-3x3:
+      enabled: true
+      price: 10000
+    harvester-5x5:
+      enabled: true
+      price: 35000
+    tiller:
+      enabled: true
+      price: 4000
+
+  # --- Sword Mods ---
+  sword:
+    lifesteal:
+      enabled: true
+      price: 30000
+      heal-percent: 0.15
+      max-heal-per-second: 4.0
+    thunderstrike:
+      enabled: true
+      price: 30000
+      hits-required: 7
+      extra-damage: 4.0
+      cooldown-seconds: 10
+    decapitator:
+      enabled: true
+      price: 15000
+      mob-head-chance: 0.05
+    evoker-fangs:
+      enabled: true
+      price: 25000
+      hits-required: 5
+      fang-count: 5
+      fang-damage: 3.0
+      cooldown-seconds: 8
+
+  # --- Spear Mods ---
+  spear:
+    cripple:
+      enabled: true
+      price: 6000
+      jab-slowness-level: 0
+      jab-duration-seconds: 3
+      charge-slowness-level: 1
+      charge-duration-seconds: 4
+    bleed:
+      enabled: true
+      price: 8000
+      damage-per-tick: 2.0
+      tick-interval-seconds: 2
+      duration-seconds: 6
+    dash-impact:
+      enabled: true
+      price: 10000
+      aoe-radius: 2.0
+      aoe-damage-percent: 0.40
+    spear-sweep:
+      enabled: true
+      price: 12000
+      radius: 3.0
+      damage-percent: 0.60
+    momentum:
+      enabled: true
+      price: 15000
+      percent-per-block: 0.10
+      max-bonus-percent: 1.0
+    evoker-fangs:
+      enabled: true
+      price: 25000
+      fang-count: 5
+      fang-damage: 3.0
+      cooldown-seconds: 8
+    # --- New Trident Mods ---
+    riptide:
+      enabled: true
+      price: 20000
+      launch-power: 2.5
+      cooldown-seconds: 8
+      # If true, free use (no water bucket cost) when it's raining
+      free-in-rain: true
+      # Fall damage immunity duration after launch (seconds)
+      fall-immunity-seconds: 5
+    loyalty-plus:
+      enabled: true
+      price: 15000
+      return-speed-multiplier: 2.0
+      return-damage: 4.0
+      return-hit-radius: 1.5
+    chain-lightning:
+      enabled: true
+      price: 25000
+      max-chains: 3
+      chain-radius: 5.0
+      chain-start-multiplier: 0.70
+      chain-reduction-per-jump: 0.70
+      cooldown-seconds: 6
+    anchor:
+      enabled: true
+      price: 18000
+      duration-seconds: 2
+      slowness-level: 4
+      cooldown-seconds: 10
+    poseidons-call:
+      enabled: true
+      price: 30000
+      pull-radius: 6.0
+      pull-duration-seconds: 3
+      pull-strength: 0.3
+      cooldown-seconds: 12
+
+  # --- Shield Mods ---
+  shield:
+    magnetic-shield:
+      enabled: true
+      price: 8000
+      radius: 2.0
+    shield-bash:
+      enabled: true
+      price: 10000
+      damage: 6.0
+      knockback-strength: 5.0
+      slowness-duration-seconds: 2
+      cooldown-seconds: 5
+      counter-window-seconds: 0.5
+    phalanx:
+      enabled: true
+      price: 12000
+      radius: 3.0
+      resistance-level: 0
+    reflective-shield:
+      enabled: true
+      price: 18000
+      reflect-percent: 0.25
+
+  # --- Mace Mods ---
+  mace:
+    tremor:
+      enabled: true
+      price: 20000
+      slowness-level: 1
+      nausea-duration-seconds: 3
+      slowness-duration-seconds: 3
+    seismic-slam:
+      enabled: true
+      price: 35000
+      radius: 5.0
+      aoe-damage-percent: 0.50
+    graviton-pulse:
+      enabled: true
+      price: 40000
+      radius: 6.0
+      pull-duration-seconds: 1.5
+      cooldown-seconds: 15
+    meteor-strike:
+      enabled: true
+      price: 50000
+      min-fall-blocks: 15
+      fire-duration-seconds: 5
+
+  # --- Bow / Crossbow Mods ---
+  bow:
+    homing-arrow:
+      enabled: true
+      price: 25000
+      tracking-radius: 3.0
+      correction-strength: 0.15
+      max-tracking-seconds: 3.0
+    explosive-arrow:
+      enabled: true
+      price: 18000
+      explosion-radius: 2.0
+      center-damage: 10.0
+      cooldown-seconds: 2
+
+  # --- Elytra Mods ---
+  elytra:
+    firework-efficiency:
+      enabled: true
+      price: 8000
+      efficiency-multiplier: 1.5
+    safe-landing:
+      enabled: true
+      price: 12000
+      damage-reduction: 0.75
+      auto-slow-fall-duration-seconds: 2
+      auto-slow-fall-cooldown-seconds: 30
+      ground-detect-distance: 10
+    aerodynamic:
+      enabled: true
+      price: 15000
+      drag-reduction: 0.30
+    boost:
+      enabled: true
+      price: 20000
+      speed-multiplier: 1.5
+      cooldown-seconds: 18
+      trail-enabled: true
+      sound-enabled: true
+      sound-volume: 1.0
+      sound-pitch: 0.8
+    phantom-cloak:
+      enabled: true
+      price: 25000
+      activation-delay-seconds: 3
+    sonic-boom:
+      enabled: true
+      price: 35000
+      speed-threshold: 1.5
+      damage: 4.0
+      radius: 3.0
+
+  # --- Universal Mods (any tool / weapon) ---
+  universal:
+    soulbound:
+      enabled: true
+      price: 100000
+    experienced:
+      enabled: true
+      price: 6000
+      xp-multiplier: 1.5
+    unbreakable:
+      enabled: true
+      price: 500000
+
+  # --- Armor Mods ---
+  armor:
+    # Helmet Mods
+    helmet:
+      night-owl:
+        enabled: true
+        price: 30000
+      aqua-lung:
+        enabled: true
+        price: 25000
+      hunters-sight:
+        enabled: true
+        price: 20000
+        radius: 15
+        update-interval-ticks: 40
+
+    # Chestplate Mods
+    chestplate:
+      vitality:
+        enabled: true
+        price: 30000
+        extra-health: 4.0
+      last-stand:
+        enabled: true
+        price: 30000
+        health-threshold: 6.0
+        duration-seconds: 5
+        cooldown-seconds: 60
+      thorns-aura:
+        enabled: true
+        price: 18000
+        reflect-damage: 2.0
+
+    # Leggings Mods
+    leggings:
+      swift:
+        enabled: true
+        price: 20000
+      dodger:
+        enabled: true
+        price: 35000
+        dodge-chance: 0.20
+        internal-cooldown-seconds: 1
+
+    # Boots Mods
+    boots:
+      featherweight:
+        enabled: true
+        price: 10000
+        reduction-percent: 0.50
+      double-jump:
+        enabled: true
+        price: 55000
+        cooldown-seconds: 5
+        # Multiplier relative to a wind charge (1.0 = same as wind charge, 0.8 = slightly weaker)
+        jump-velocity-multiplier: 0.80
+      frost-walker-plus:
+        enabled: true
+        price: 20000
+        radius: 4
+        ice-duration-seconds: 10
+

@@ -1,0 +1,33 @@
+name: ToolMods
+version: '${version}'
+main: pt.henrique.toolmods.ToolMods
+api-version: "1.21"
+description: Server-side tool modifications — area mining, tree felling, auto smelt, and more.
+author: Henrique
+dependencies:
+  server:
+    MultiBank:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    Vault:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    PlayerSettings:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    LandClaim:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    AntiXRAY:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    BuildersDream:
+      load: BEFORE
+      required: false
+      join-classpath: true
+

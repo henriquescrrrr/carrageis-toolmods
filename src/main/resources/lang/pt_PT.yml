@@ -1,0 +1,814 @@
+# ToolMods — Português (pt_PT)
+
+prefix: "<gray>[<gold>ToolMods</gold>]</gray> "
+
+# Exibição de cooldown na barra de ação
+cooldown-display: "<gray>⏳ Cooldown | <yellow>{mod}</yellow> termina em <white>{time}s</white></gray>"
+
+# Exibição de ímpeto na barra de ação (durante investida de lança)
+momentum-display: "<gray>⚡ <gold>Ímpeto: <white>+{percent}%</white></gold></gray>"
+
+# GUI de Confirmação
+confirm-title: "<dark_gray>Confirmar Compra"
+confirm-buy: "<green>Clica para confirmar"
+confirm-buy-lore: "<gray>Comprar <white>{mod}</white> por <white>{price}</white>"
+confirm-cancel: "<red>Clica para cancelar"
+
+# ========================
+# Geral
+# ========================
+general:
+  reload-success: "<green>Configuração recarregada com sucesso."
+  no-permission: "<red>Não tens permissão para isso."
+  player-only: "<red>Este comando só pode ser usado por jogadores."
+  no-economy: "<red>Sistema de economia indisponível."
+
+# ========================
+# Mensagens da Loja
+# ========================
+shop:
+  title: "<dark_gray>⚙ <gold>Loja de Mods"
+  category-title: "<dark_gray>⚙ <gold>Mods de {category}"
+  my-mods-title: "<dark_gray>⚙ <gold>Os Meus Mods"
+  purchase-success: "<green>Compraste <gold>{mod}</gold> por <yellow>{price}</yellow>!"
+  purchase-fail-money: "<red>Não tens dinheiro suficiente! Precisas de <yellow>{price}</yellow>."
+  purchase-fail-tool: "<red>Segura um(a) <yellow>{tool}</yellow> na mão principal para comprar este mod."
+  purchase-fail-already: "<red>Este item já tem <yellow>{mod}</yellow>."
+  purchase-fail-prerequisite: "<red>Precisas de <yellow>{prerequisite}</yellow> primeiro!"
+  purchase-fail-disabled: "<red>Este mod está desativado de momento."
+  no-mods-on-item: "<yellow>Este item não tem mods aplicados."
+  hold-item: "<red>Segura um item na mão principal."
+  mod-toggled-on: "<green>Ativado <gold>{mod}</gold>."
+  mod-toggled-off: "<yellow>Desativado <gold>{mod}</gold>."
+
+# ========================
+# Itens do GUI
+# ========================
+gui:
+  main-menu:
+    title-item: "<gold><bold>Mods de Ferramentas"
+    title-lore:
+      - ""
+      - "<gray>Explora e compra"
+      - "<gray>modificações para as tuas ferramentas."
+    pickaxe: "<yellow>Mods de Picareta"
+    pickaxe-lore:
+      - "<gray>Mineração em Área, Auto Fundir,"
+      - "<gray>Telepatia, Vein Miner"
+    axe: "<yellow>Mods de Machado"
+    axe-lore:
+      - "<gray>Corte de Árvore"
+    shovel: "<yellow>Mods de Pá"
+    shovel-lore:
+      - "<gray>Escavadora, Criador de Caminhos"
+    hoe: "<yellow>Mods de Enxada"
+    hoe-lore:
+      - "<gray>Ceifeira, Arador"
+    sword: "<yellow>Mods de Espada"
+    sword-lore:
+      - "<gray>Roubo de Vida, Trovão,"
+      - "<gray>Decapitador, Presas do Evocador"
+    spear: "<yellow>Mods de Lança"
+    spear-lore:
+      - "<gray>Aleijamento, Sangramento, Impacto,"
+      - "<gray>Varredura, Ímpeto, Presas do Evocador,"
+      - "<gray>Riptide, Lealdade+, Raio em Cadeia,"
+      - "<gray>Âncora, Chamado de Poseidon"
+    shield: "<yellow>Mods de Escudo"
+    shield-lore:
+      - "<gray>Escudo Magnético, Investida de Escudo,"
+      - "<gray>Falange, Escudo Reflexivo"
+    mace: "<yellow>Mods de Maça"
+    mace-lore:
+      - "<gray>Tremor, Impacto Sísmico,"
+      - "<gray>Pulso Gravitacional, Impacto Meteórico"
+    bow: "<yellow>Mods de Arco / Besta"
+    bow-lore:
+      - "<gray>Flecha Teleguiada, Flecha Explosiva"
+    universal: "<yellow>Mods Universais"
+    universal-lore:
+      - "<gray>Vinculado à Alma, Experiente,"
+      - "<gray>Indestrutível"
+    helmet: "<yellow>Mods de Capacete"
+    helmet-lore:
+      - "<gray>Visão Noturna, Pulmão Aquático,"
+      - "<gray>Visão do Caçador"
+    chestplate: "<yellow>Mods de Peitoral"
+    chestplate-lore:
+      - "<gray>Vitalidade, Última Resistência,"
+      - "<gray>Aura de Espinhos"
+    leggings: "<yellow>Mods de Calças"
+    leggings-lore:
+      - "<gray>Velocidade, Esquivo"
+    boots: "<yellow>Mods de Botas"
+    boots-lore:
+      - "<gray>Peso Pena, Salto Duplo,"
+      - "<gray>Frost Walker Plus"
+    elytra: "<yellow>Mods de Elytra"
+    elytra-lore:
+      - "<gray>Eficiência de Foguete, Aterragem Segura,"
+      - "<gray>Aerodinâmico, Impulso,"
+      - "<gray>Manto Fantasma, Explosão Sónica"
+    my-mods: "<aqua>Os Meus Mods"
+    my-mods-lore:
+      - "<gray>Ver e alternar mods"
+      - "<gray>no item em mão."
+    close: "<red>Fechar"
+
+  status:
+    click-to-buy: "<green>Clica para comprar!"
+    owned: "<green>✔ Adquirido"
+    locked: "<red>🔒 Requer {prerequisite}"
+    disabled: "<dark_gray>✘ Mod desativado pelo servidor"
+    price: "<gray>Preço: <yellow>{price}"
+
+  toggle:
+    enabled: "<green>✔ Ativado <gray>(clica para desativar)"
+    disabled: "<red>✘ Desativado <gray>(clica para ativar)"
+
+  navigation:
+    back: "<yellow>← Voltar"
+    next-page: "<yellow>Página Seguinte →"
+    prev-page: "<yellow>← Página Anterior"
+
+# ========================
+# Nomes e Descrições dos Mods
+# ========================
+mod:
+  area-mine-3x3:
+    name: "Mineração em Área 3×3"
+    description:
+      - "<gray>Minera uma área 3×3 centrada no"
+      - "<gray>bloco que partes. A orientação do plano"
+      - "<gray>corresponde à face atingida."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Minera normalmente — 3×3 ativa automaticamente"
+      - "<gray>• <white>Agachar (Shift)</white> para minerar um bloco"
+      - "<gray>• Gasta <white>9 durabilidade</white> por golpe"
+      - ""
+      - "<dark_gray>Funciona com: Auto Fundir, Telepatia"
+
+  area-mine-5x5:
+    name: "Mineração em Área 5×5"
+    description:
+      - "<gray>Minera uma área 5×5 centrada no"
+      - "<gray>bloco que partes. Requer Mineração 3×3."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Minera normalmente — 5×5 ativa automaticamente"
+      - "<gray>• <white>Agachar (Shift)</white> para minerar um bloco"
+      - "<gray>• Gasta <white>25 durabilidade</white> por golpe"
+      - ""
+      - "<dark_gray>Requer: Mineração em Área 3×3"
+      - "<dark_gray>Funciona com: Auto Fundir, Telepatia"
+
+  auto-smelt:
+    name: "Auto Fundir"
+    description:
+      - "<gray>Minérios brutos caem como lingotes"
+      - "<gray>fundidos. Ferro → Lingote de Ferro,"
+      - "<gray>Ouro → Lingote de Ouro, Cobre → Lingote."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — sempre ativo ao minerar"
+      - "<gray>• <white>Silk Touch anula</white> este mod"
+      - "<gray>• Fortune aplica-se aos lingotes"
+
+  telepathy:
+    name: "Telepatia"
+    description:
+      - "<gray>Todos os drops da mineração vão"
+      - "<gray>diretamente para o teu inventário"
+      - "<gray>em vez de cair no chão."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — sempre ativo ao minerar"
+      - "<gray>• Se o inventário estiver cheio, drops normais"
+      - ""
+      - "<dark_gray>Funciona com: Mineração em Área, Vein Miner"
+
+  vein-miner:
+    name: "Vein Miner"
+    description:
+      - "<gray>Minera um filão inteiro de minerai"
+      - "<gray>com um único golpe. Todos os blocos"
+      - "<gray>conectados do mesmo tipo (máx 64)."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Agachar (Shift) + minerar um minério</white>"
+      - "<gray>• Só funciona em blocos de minério"
+      - "<gray>• Gasta 1 durabilidade por bloco"
+      - ""
+      - "<dark_gray>Funciona com: Auto Fundir, Telepatia, Fortune"
+
+  tree-feller:
+    name: "Corte de Árvore"
+    description:
+      - "<gray>Corta uma árvore inteira com um golpe."
+      - "<gray>Troncos, folhas, mudas, paus e"
+      - "<gray>maçãs caem. Replanta auto uma muda."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Agachar (Shift) + partir um tronco</white>"
+      - "<gray>• Só funciona em árvores reais (com folhas)"
+      - "<gray>• Não parte paredes/construções de troncos"
+      - "<gray>• Gasta 1 durabilidade por tronco"
+
+  excavator-3x3:
+    name: "Escavadora 3×3"
+    description:
+      - "<gray>Escava uma área 3×3 de terra, areia,"
+      - "<gray>cascalho e outros blocos de pá."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Escava normalmente — 3×3 ativa automaticamente"
+      - "<gray>• <white>Agachar (Shift)</white> para escavar um bloco"
+      - "<gray>• Gasta <white>9 durabilidade</white> por golpe"
+
+  excavator-5x5:
+    name: "Escavadora 5×5"
+    description:
+      - "<gray>Escava uma área 5×5. Requer"
+      - "<gray>Escavadora 3×3."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Escava normalmente — 5×5 ativa automaticamente"
+      - "<gray>• <white>Agachar (Shift)</white> para escavar um bloco"
+      - "<gray>• Gasta <white>25 durabilidade</white> por golpe"
+      - ""
+      - "<dark_gray>Requer: Escavadora 3×3"
+
+  path-maker:
+    name: "Criador de Caminhos"
+    description:
+      - "<gray>Cria um caminho de 3 blocos de largura"
+      - "<gray>na direção para onde estás virado."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Clique direito</white> em relva/terra com pá"
+      - "<gray>• O caminho estende 3 blocos a cada clique"
+
+  harvester-3x3:
+    name: "Ceifeira 3×3"
+    description:
+      - "<gray>Colhe culturas maduras numa área 3×3"
+      - "<gray>e replanta-as automaticamente."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Parte uma cultura madura — 3×3 ativa"
+      - "<gray>• Só colhe culturas totalmente crescidas"
+      - "<gray>• Usa 1 semente para replantação por cultura"
+
+  harvester-5x5:
+    name: "Ceifeira 5×5"
+    description:
+      - "<gray>Colhe culturas maduras numa área 5×5."
+      - "<gray>Requer Ceifeira 3×3."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Parte uma cultura madura — 5×5 ativa"
+      - "<gray>• Replanta auto com sementes dos drops"
+      - ""
+      - "<dark_gray>Requer: Ceifeira 3×3"
+
+  tiller:
+    name: "Arador"
+    description:
+      - "<gray>Ara uma área 3×3 de terra em"
+      - "<gray>terreno arável."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Clique direito</white> em terra/relva com enxada"
+      - "<gray>• Gasta <white>9 durabilidade</white> por uso"
+
+  lifesteal:
+    name: "Roubo de Vida"
+    description:
+      - "<gray>Cura-te em 15% do dano causado."
+      - "<gray>Só funciona contra mobs hostis"
+      - "<gray>e jogadores."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — cura a cada golpe"
+      - "<gray>• Máx <white>2 corações/segundo</white>"
+      - "<gray>• Não funciona em mobs passivos"
+
+  thunderstrike:
+    name: "Trovão"
+    description:
+      - "<gray>Após 7 golpes consecutivos no mesmo"
+      - "<gray>alvo, um relâmpago atinge-o"
+      - "<gray>causando 2 corações extra de dano."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Atinge o mesmo alvo 7 vezes"
+      - "<gray>• O contador reinicia ao mudar de alvo"
+      - "<gray>• <white>10s de cooldown</white> após ativação"
+
+  decapitator:
+    name: "Decapitador"
+    description:
+      - "<gray>Inimigos mortos podem largar a cabeça."
+      - "<gray>Jogadores: <white>100%</white> de hipótese."
+      - "<gray>Mobs: <white>5%</white> de hipótese."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Mata qualquer mob ou jogador com esta espada"
+      - "<gray>• As cabeças são troféus decorativos"
+
+  evoker-fangs:
+    name: "Presas do Evocador"
+    description:
+      - "<gray>Após 5 golpes consecutivos, invoca uma"
+      - "<gray>linha de presas do evocador que causam"
+      - "<gray>dano mágico (ignora armadura)."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Atinge o mesmo alvo 5 vezes"
+      - "<gray>• 5 presas, <white>3 de dano</white> cada"
+      - "<gray>• <white>8s de cooldown</white> após ativação"
+
+  cripple:
+    name: "Aleijamento"
+    description:
+      - "<gray>Os golpes abrandam o alvo."
+      - "<gray>Golpe: Lentidão I durante 3s."
+      - "<gray>Investida: Lentidão II durante 4s."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — aplica-se a cada golpe"
+      - "<gray>• Investidas aplicam abrandamento mais forte"
+
+  bleed:
+    name: "Sangramento"
+    description:
+      - "<gray>Golpes causam sangramento: 1 coração"
+      - "<gray>de dano a cada 2 segundos durante"
+      - "<gray>6 segundos."
+      - "<gray>Não acumula — novos golpes reiniciam o timer."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — aplica-se a cada golpe"
+
+  dash-impact:
+    name: "Impacto de Investida"
+    description:
+      - "<gray>Investidas criam uma onda de choque que"
+      - "<gray>atinge todos os inimigos num raio de 2"
+      - "<gray>blocos por 40% do dano."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Mantém clique direito</white> para investir"
+      - "<gray>• Só ativa em ataques de investida"
+
+  spear-sweep:
+    name: "Varredura de Lança"
+    description:
+      - "<gray>Agachar + golpe atinge todos os"
+      - "<gray>inimigos num arco de 180° à tua"
+      - "<gray>frente por 60% do dano."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Agachar (Shift) + clique esquerdo</white>"
+      - "<gray>• Só funciona com golpe, não investida"
+
+  momentum:
+    name: "Ímpeto"
+    description:
+      - "<gray>Investidas causam mais dano quanto mais"
+      - "<gray>longe corres. +10% por bloco,"
+      - "<gray>até +100% (dano duplicado)."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Mantém clique direito</white>, corre longe, atinge"
+      - "<gray>• Multiplicador mostrado na barra de ação"
+
+  spear-evoker-fangs:
+    name: "Presas do Evocador (Lança)"
+    description:
+      - "<gray>Investidas invocam uma linha de presas"
+      - "<gray>do evocador desde o ponto de impacto."
+      - "<gray>Dano mágico que ignora armadura."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Atinge com investida para invocar presas"
+      - "<gray>• 5 presas, <white>3 de dano</white> cada"
+      - "<gray>• <white>8s de cooldown</white>"
+
+  riptide:
+    name: "Riptide"
+    description:
+      - "<gray>Clica com o botão direito para te lançares"
+      - "<gray>como o Riptide — sem precisar de água!"
+      - ""
+      - "<gray>Custa <aqua>1 balde de água</aqua> por uso."
+      - "<gray>Grátis durante chuva."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Clique direito</white> com tridente"
+      - "<gray>• Cooldown: <white>{cooldown}s</white>"
+      - "<gray>• Sem dano de queda após lançamento"
+      - ""
+      - "<dark_gray>Não funciona com encantamento Riptide vanilla"
+    no-water-bucket: "<red>Precisas de um balde de água para usar o Riptide!"
+
+  loyalty-plus:
+    name: "Lealdade+"
+    description:
+      - "<gray>O teu tridente volta <white>duas vezes mais rápido</white>"
+      - "<gray>e <red>causa dano a inimigos</red> no caminho de volta."
+      - ""
+      - "<gray>Requer encantamento <white>Loyalty</white>."
+      - "<gray>Dano no regresso: <white>{damage} HP</white>"
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — atira o tridente normalmente"
+      - "<gray>• Entidades perto do caminho de volta levam dano"
+
+  chain-lightning:
+    name: "Raio em Cadeia"
+    description:
+      - "<gray>Ao acertar, um raio atinge o alvo"
+      - "<gray>e <yellow>salta para {chains} inimigos próximos</yellow>."
+      - ""
+      - "<gray>Cada salto: <white>{reduction}%</white> menos dano."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Acerta com golpe ou tridente atirado"
+      - "<gray>• Cooldown: <white>{cooldown}s</white>"
+      - ""
+      - "<dark_gray>Funciona com: golpe corpo a corpo + atirado"
+
+  anchor:
+    name: "Âncora"
+    description:
+      - "<gray>Ao acertar, <white>prende o alvo ao chão</white>"
+      - "<gray>durante <white>{duration}s</white> — sem saltar, sem elytra."
+      - ""
+      - "<gray>Aplica Lentidão V."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Acerta com golpe ou tridente atirado"
+      - "<gray>• Cooldown: <white>{cooldown}s</white>"
+      - ""
+      - "<dark_gray>O alvo vê contagem decrescente na barra de ação"
+    anchored-actionbar: "<dark_gray>⚓ <gray>Ancorado! <white>{time}s</white>"
+
+  poseidons-call:
+    name: "Chamado de Poseidon"
+    description:
+      - "<gray>Atira o tridente na <aqua>água</aqua> para"
+      - "<gray>criar um <aqua>redemoinho</aqua> que puxa inimigos"
+      - "<gray>para o ponto de impacto."
+      - ""
+      - "<gray>Raio: <white>{radius} blocos</white>"
+      - "<gray>Duração: <white>{duration}s</white>"
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Atira o tridente para a água"
+      - "<gray>• Cooldown: <white>{cooldown}s</white>"
+      - ""
+      - "<dark_gray>Só funciona quando o tridente cai na água"
+    not-in-water: "<red>O Chamado de Poseidon só funciona na água!"
+
+  magnetic-shield:
+    name: "Escudo Magnético"
+    description:
+      - "<gray>Ao bloquear, flechas num raio de 2"
+      - "<gray>blocos são atraídas e destruídas."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Mantém clique direito</white> para bloquear"
+      - "<gray>• Só afeta flechas, não tridentes/bolas de fogo"
+
+  shield-bash:
+    name: "Investida de Escudo"
+    description:
+      - "<gray>Corre + bloqueia para investir contra"
+      - "<gray>inimigos: 3 corações + recuo massivo."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Sprint + mantém clique direito</white>"
+      - "<gray>• <white>5s de cooldown</white>"
+      - ""
+      - "<dark_gray>Contra: golpe de machado ou investida de lança"
+
+  phalanx:
+    name: "Falange"
+    description:
+      - "<gray>Ao bloquear, aliados atrás de ti"
+      - "<gray>ganham Resistência I (redução de dano)."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Mantém clique direito</white> para bloquear"
+      - "<gray>• Protege aliados num raio de 3 blocos atrás"
+
+  reflective-shield:
+    name: "Escudo Reflexivo"
+    description:
+      - "<gray>Ao bloquear, reflete 25% do dano."
+      - "<gray>Flechas são refletidas como projéteis reais."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Mantém clique direito</white> para bloquear"
+      - "<gray>• Funciona com ataques corpo a corpo e projéteis"
+
+  tremor:
+    name: "Tremor"
+    description:
+      - "<gray>Ataques de esmagar dão Lentidão II"
+      - "<gray>e Náusea a todos os inimigos"
+      - "<gray>próximos durante 3 segundos."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Cai 1.5+ blocos e atinge com maça"
+      - "<gray>• Afeta todas as entidades no raio de impacto"
+
+  seismic-slam:
+    name: "Impacto Sísmico"
+    description:
+      - "<gray>Raio de esmagar expandido para"
+      - "<gray>5 blocos. Todos os inimigos no alcance"
+      - "<gray>levam 50% do dano principal."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Cai 1.5+ blocos e atinge com maça"
+      - "<gray>• Zona de impacto maior que vanilla"
+
+  graviton-pulse:
+    name: "Pulso Gravitacional"
+    description:
+      - "<gray>Após esmagar, todas as entidades num"
+      - "<gray>raio de 6 blocos são puxadas para o"
+      - "<gray>ponto de impacto durante 1.5 segundos."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Cai 1.5+ blocos e atinge com maça"
+      - "<gray>• <white>15s de cooldown</white>"
+      - ""
+      - "<dark_gray>Combo com: Impacto Sísmico"
+
+  meteor-strike:
+    name: "Impacto Meteórico"
+    description:
+      - "<gray>Cai 15+ blocos antes de esmagar para"
+      - "<gray>incendiar todos os inimigos"
+      - "<gray>durante 5 segundos."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Cai <white>15+ blocos</white> e atinge com maça"
+      - "<gray>• O fogo é visual — não destrói nada"
+
+  homing-arrow:
+    name: "Flecha Teleguiada"
+    description:
+      - "<gray>Flechas curvam ligeiramente em direção"
+      - "<gray>ao mob hostil ou jogador mais próximo."
+      - "<gray>Corrige tiros quase-acertados."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — todas as flechas rastreiam"
+      - "<gray>• Só rastreia mobs hostis e jogadores"
+      - "<gray>• Não funciona com Multishot"
+
+  explosive-arrow:
+    name: "Flecha Explosiva"
+    description:
+      - "<gray>Flechas explodem ao impacto por 5 corações"
+      - "<gray>de dano em área. Não destrói blocos."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — todas as flechas explodem"
+      - "<gray>• <white>2s de cooldown</white> entre explosões"
+      - "<gray>• Não funciona com Multishot"
+
+  firework-efficiency:
+    name: "Eficiência de Foguete"
+    description:
+      - "<gray>Foguetes usados durante o voo de"
+      - "<gray>elytra duram 50% mais."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — usa foguetes normalmente"
+      - "<gray>• Mesmo foguete, impulso mais longo"
+
+  safe-landing:
+    name: "Aterragem Segura"
+    description:
+      - "<gray>75% menos dano de queda com elytra."
+      - "<gray>Ativa automaticamente Queda Lenta quando"
+      - "<gray>estás prestes a colidir."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — protege-te sempre"
+      - "<gray>• Queda Lenta de emergência: <white>30s de cooldown</white>"
+
+  aerodynamic:
+    name: "Aerodinâmico"
+    description:
+      - "<gray>30% menos perda de velocidade ao planar."
+      - "<gray>Voa mais longe com menos foguetes."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — sempre ativo ao planar"
+
+  boost:
+    name: "Impulso"
+    description:
+      - "<gray>Impulso de velocidade gratuito ao planar —"
+      - "<gray>como um foguete sem o foguete."
+      - "<gray>Rastro de fogo e som de lançamento."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Agachar (Shift)</white> enquanto planas"
+      - "<gray>• <white>18s de cooldown</white>"
+
+  phantom-cloak:
+    name: "Manto Fantasma"
+    description:
+      - "<gray>Torna-te invisível após 3 segundos de"
+      - "<gray>voo contínuo. O nome também fica oculto."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — voa 3 segundos para ativar"
+      - "<gray>• Aterrar, atacar ou levar dano desativa"
+
+  sonic-boom:
+    name: "Explosão Sónica"
+    description:
+      - "<gray>Voa rápido o suficiente e inimigos perto"
+      - "<gray>da tua trajetória levam 4 de dano"
+      - "<gray>+ recuo."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — atinge alta velocidade ao planar"
+      - "<gray>• Afeta entidades num raio de 3 blocos"
+
+  night-owl:
+    name: "Visão Noturna"
+    description:
+      - "<gray>Visão Noturna permanente."
+      - "<gray>Sem necessidade de poções."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — equipa o capacete"
+      - "<gray>• Liga/desliga em <white>/mods manage</white>"
+
+  aqua-lung:
+    name: "Pulmão Aquático"
+    description:
+      - "<gray>Respiração Aquática permanente."
+      - "<gray>Respira debaixo de água para sempre."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — equipa o capacete"
+
+  hunters-sight:
+    name: "Visão do Caçador"
+    description:
+      - "<gray>Mobs hostis num raio de 15 blocos"
+      - "<gray>brilham através das paredes."
+      - "<gray>Só tu os podes ver."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — equipa o capacete"
+      - "<gray>• Não revela jogadores"
+
+  vitality:
+    name: "Vitalidade"
+    description:
+      - "<gray>+2 corações extra enquanto equipado."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — equipa o peitoral"
+      - "<gray>• Corações extra perdidos ao desequipar"
+
+  last-stand:
+    name: "Última Resistência"
+    description:
+      - "<gray>Abaixo de 3 corações: Resistência II"
+      - "<gray>e Força I durante 5 segundos."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — ativa automaticamente"
+      - "<gray>• <white>60s de cooldown</white>"
+
+  thorns-aura:
+    name: "Aura de Espinhos"
+    description:
+      - "<gray>Atacantes levam 1 coração de dano."
+      - "<gray>100% consistente (não aleatório como Thorns)."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — equipa o peitoral"
+
+  swift:
+    name: "Velocidade"
+    description:
+      - "<gray>Velocidade I permanente enquanto equipado."
+      - "<gray>Acumula com beacons e poções."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — equipa as calças"
+
+  dodger:
+    name: "Esquivo"
+    description:
+      - "<gray>20% de hipótese de esquivar completamente"
+      - "<gray>ataques corpo a corpo e projéteis"
+      - "<gray>(0 dano)."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — equipa as calças"
+      - "<gray>• 1s de cooldown interno entre esquivas"
+      - "<gray>• Não esquiva queda/fogo/ambiente"
+
+  featherweight:
+    name: "Peso Pena"
+    description:
+      - "<gray>50% menos dano de queda."
+      - "<gray>Acumula com Feather Falling."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — equipa as botas"
+
+  double-jump:
+    name: "Salto Duplo"
+    description:
+      - "<gray>Salta mais uma vez no ar."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• <white>Pressiona Espaço</white> novamente no ar"
+      - "<gray>• <white>5s de cooldown</white>"
+      - "<gray>• O 2º salto tem 80% da altura do 1º"
+
+  frost-walker-plus:
+    name: "Frost Walker Plus"
+    description:
+      - "<gray>Frost Walker melhorado: raio de 4 blocos,"
+      - "<gray>gelo dura 10 segundos. Boost de velocidade."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — anda sobre água para congelar"
+      - "<gray>• Acumula com encantamento Frost Walker"
+
+  soulbound:
+    name: "Vinculado à Alma"
+    description:
+      - "<gray>Este item é mantido ao morrer."
+      - "<gray>Vai diretamente para o teu inventário"
+      - "<gray>ao renascer."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — o item nunca cai ao morrer"
+      - "<gray>• Sobrevive a reinícios do servidor"
+
+  experienced:
+    name: "Experiente"
+    description:
+      - "<gray>+50% XP de todas as atividades com"
+      - "<gray>este item. Mineração, combate,"
+      - "<gray>colheita — tudo aumentado."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — usa o item normalmente"
+
+  unbreakable:
+    name: "Indestrutível"
+    description:
+      - "<gray>Este item nunca perde durabilidade."
+      - "<gray>Zero desgaste, dura para sempre."
+      - ""
+      - "<yellow>⌨ Utilização:</yellow>"
+      - "<gray>• Passivo — o item é indestrutível"
+
+# ========================
+# Nomes dos Tipos de Ferramenta
+# ========================
+tool:
+  pickaxe: "Picareta"
+  axe: "Machado"
+  shovel: "Pá"
+  hoe: "Enxada"
+  sword: "Espada"
+  spear: "Lança"
+  shield: "Escudo"
+  mace: "Maça"
+  bow: "Arco / Besta"
+  helmet: "Capacete"
+  chestplate: "Peitoral"
+  leggings: "Calças"
+  boots: "Botas"
+  elytra: "Elytra"
+  universal: "Qualquer Ferramenta"
+
+# ========================
+# Lore
+# ========================
+lore:
+  separator: "<dark_gray>──────────────"
+  header: "<gold>⚙ Mods:"
+  mod-entry: "<gray>• {mod}"
+  mod-entry-disabled: "<dark_gray>• <strikethrough>{mod}</strikethrough>"
+

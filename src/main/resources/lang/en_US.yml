@@ -1,0 +1,806 @@
+# ToolMods — English (en_US)
+
+prefix: "<gray>[<gold>ToolMods</gold>]</gray> "
+
+# Cooldown action bar display
+cooldown-display: "<gray>⏳ Cooldown | <yellow>{mod}</yellow> ends in <white>{time}s</white></gray>"
+
+# Momentum action bar display (during spear charge)
+momentum-display: "<gray>⚡ <gold>Momentum: <white>+{percent}%</white></gold></gray>"
+
+# Confirmation GUI
+confirm-title: "<dark_gray>Confirm Purchase"
+confirm-buy: "<green>Click to confirm"
+confirm-buy-lore: "<gray>Buy <white>{mod}</white> for <white>{price}</white>"
+confirm-cancel: "<red>Click to cancel"
+
+# ========================
+# General
+# ========================
+general:
+  reload-success: "<green>Configuration reloaded successfully."
+  no-permission: "<red>You don't have permission to do that."
+  player-only: "<red>This command can only be used by players."
+  no-economy: "<red>Economy system is not available."
+
+# ========================
+# Shop Messages
+# ========================
+shop:
+  title: "<dark_gray>⚙ <gold>Tool Mods Shop"
+  category-title: "<dark_gray>⚙ <gold>{category} Mods"
+  my-mods-title: "<dark_gray>⚙ <gold>My Mods"
+  purchase-success: "<green>You purchased <gold>{mod}</gold> for <yellow>{price}</yellow>!"
+  purchase-fail-money: "<red>You don't have enough money! You need <yellow>{price}</yellow>."
+  purchase-fail-tool: "<red>Hold a <yellow>{tool}</yellow> in your main hand to buy this mod."
+  purchase-fail-already: "<red>This item already has <yellow>{mod}</yellow>."
+  purchase-fail-prerequisite: "<red>You need <yellow>{prerequisite}</yellow> first!"
+  purchase-fail-disabled: "<red>This mod is currently disabled."
+  no-mods-on-item: "<yellow>This item has no mods applied."
+  hold-item: "<red>Hold an item in your main hand."
+  mod-toggled-on: "<green>Enabled <gold>{mod}</gold>."
+  mod-toggled-off: "<yellow>Disabled <gold>{mod}</gold>."
+
+# ========================
+# GUI Items
+# ========================
+gui:
+  main-menu:
+    title-item: "<gold><bold>Tool Mods"
+    title-lore:
+      - ""
+      - "<gray>Browse and purchase"
+      - "<gray>modifications for your tools."
+    pickaxe: "<yellow>Pickaxe Mods"
+    pickaxe-lore:
+      - "<gray>Area Mine, Auto Smelt,"
+      - "<gray>Telepathy, Vein Miner"
+    axe: "<yellow>Axe Mods"
+    axe-lore:
+      - "<gray>Tree Feller"
+    shovel: "<yellow>Shovel Mods"
+    shovel-lore:
+      - "<gray>Excavator, Path Maker"
+    hoe: "<yellow>Hoe Mods"
+    hoe-lore:
+      - "<gray>Harvester, Tiller"
+    sword: "<yellow>Sword Mods"
+    sword-lore:
+      - "<gray>Lifesteal, Thunderstrike,"
+      - "<gray>Decapitator, Evoker Fangs"
+    spear: "<yellow>Spear Mods"
+    spear-lore:
+      - "<gray>Cripple, Bleed, Dash Impact,"
+      - "<gray>Spear Sweep, Momentum, Evoker Fangs,"
+      - "<gray>Riptide, Loyalty+, Chain Lightning,"
+      - "<gray>Anchor, Poseidon's Call"
+    shield: "<yellow>Shield Mods"
+    shield-lore:
+      - "<gray>Magnetic Shield, Shield Bash,"
+      - "<gray>Phalanx, Reflective Shield"
+    mace: "<yellow>Mace Mods"
+    mace-lore:
+      - "<gray>Tremor, Seismic Slam,"
+      - "<gray>Graviton Pulse, Meteor Strike"
+    bow: "<yellow>Bow / Crossbow Mods"
+    bow-lore:
+      - "<gray>Homing Arrow, Explosive Arrow"
+    universal: "<yellow>Universal Mods"
+    universal-lore:
+      - "<gray>Soulbound, Experienced,"
+      - "<gray>Unbreakable"
+    helmet: "<yellow>Helmet Mods"
+    helmet-lore:
+      - "<gray>Night Owl, Aqua Lung,"
+      - "<gray>Hunter's Sight"
+    chestplate: "<yellow>Chestplate Mods"
+    chestplate-lore:
+      - "<gray>Vitality, Last Stand,"
+      - "<gray>Thorns Aura"
+    leggings: "<yellow>Leggings Mods"
+    leggings-lore:
+      - "<gray>Swift, Dodger"
+    boots: "<yellow>Boots Mods"
+    boots-lore:
+      - "<gray>Featherweight, Double Jump,"
+      - "<gray>Frost Walker Plus"
+    elytra: "<yellow>Elytra Mods"
+    elytra-lore:
+      - "<gray>Firework Efficiency, Safe Landing,"
+      - "<gray>Aerodynamic, Boost,"
+      - "<gray>Phantom Cloak, Sonic Boom"
+    my-mods: "<aqua>My Mods"
+    my-mods-lore:
+      - "<gray>View and toggle mods"
+      - "<gray>on your held item."
+    close: "<red>Close"
+
+  status:
+    click-to-buy: "<green>Click to buy!"
+    owned: "<green>✔ Owned"
+    locked: "<red>🔒 Requires {prerequisite}"
+    disabled: "<dark_gray>✘ Mod disabled by server"
+    price: "<gray>Price: <yellow>{price}"
+
+  toggle:
+    enabled: "<green>✔ Enabled <gray>(click to disable)"
+    disabled: "<red>✘ Disabled <gray>(click to enable)"
+
+  navigation:
+    back: "<yellow>← Back"
+    next-page: "<yellow>Next Page →"
+    prev-page: "<yellow>← Previous Page"
+
+# ========================
+# Mod Names & Descriptions
+# ========================
+mod:
+  area-mine-3x3:
+    name: "Area Mine 3×3"
+    description:
+      - "<gray>Mines a 3×3 area centered on the"
+      - "<gray>block you break. The plane orientation"
+      - "<gray>matches the face you hit."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Mine normally — 3×3 activates automatically"
+      - "<gray>• <white>Crouch (Shift)</white> to mine single block"
+      - "<gray>• Costs <white>9 durability</white> per swing"
+      - ""
+      - "<dark_gray>Works with: Auto Smelt, Telepathy"
+
+  area-mine-5x5:
+    name: "Area Mine 5×5"
+    description:
+      - "<gray>Mines a 5×5 area centered on the"
+      - "<gray>block you break. Requires Area Mine 3×3."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Mine normally — 5×5 activates automatically"
+      - "<gray>• <white>Crouch (Shift)</white> to mine single block"
+      - "<gray>• Costs <white>25 durability</white> per swing"
+      - ""
+      - "<dark_gray>Requires: Area Mine 3×3"
+      - "<dark_gray>Works with: Auto Smelt, Telepathy"
+
+  auto-smelt:
+    name: "Auto Smelt"
+    description:
+      - "<gray>Raw ores drop as smelted ingots."
+      - "<gray>Iron Ore → Iron Ingot, Gold Ore → Gold Ingot,"
+      - "<gray>Copper Ore → Copper Ingot."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — always active when mining"
+      - "<gray>• <white>Silk Touch overrides</white> this mod"
+      - "<gray>• Fortune applies to ingot count"
+
+  telepathy:
+    name: "Telepathy"
+    description:
+      - "<gray>All mining drops go directly into"
+      - "<gray>your inventory instead of falling"
+      - "<gray>on the ground."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — always active when mining"
+      - "<gray>• If inventory is full, items drop normally"
+      - ""
+      - "<dark_gray>Works with: Area Mine, Vein Miner"
+
+  vein-miner:
+    name: "Vein Miner"
+    description:
+      - "<gray>Mines an entire ore vein with one hit."
+      - "<gray>All connected blocks of the same ore"
+      - "<gray>type break at once (max 64 blocks)."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Crouch (Shift) + mine an ore</white>"
+      - "<gray>• Only works on ore blocks"
+      - "<gray>• Costs 1 durability per block"
+      - ""
+      - "<dark_gray>Works with: Auto Smelt, Telepathy, Fortune"
+
+  tree-feller:
+    name: "Tree Feller"
+    description:
+      - "<gray>Chops an entire tree with one hit."
+      - "<gray>Logs, leaves, saplings, sticks and"
+      - "<gray>apples all drop. Auto-replants a sapling."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Crouch (Shift) + break a log</white>"
+      - "<gray>• Only works on real trees (with leaves)"
+      - "<gray>• Won't break log walls/builds"
+      - "<gray>• Costs 1 durability per log"
+
+  excavator-3x3:
+    name: "Excavator 3×3"
+    description:
+      - "<gray>Digs a 3×3 area of dirt, sand, gravel"
+      - "<gray>and other shovel blocks."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Dig normally — 3×3 activates automatically"
+      - "<gray>• <white>Crouch (Shift)</white> to dig single block"
+      - "<gray>• Costs <white>9 durability</white> per swing"
+
+  excavator-5x5:
+    name: "Excavator 5×5"
+    description:
+      - "<gray>Digs a 5×5 area. Requires Excavator 3×3."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Dig normally — 5×5 activates automatically"
+      - "<gray>• <white>Crouch (Shift)</white> to dig single block"
+      - "<gray>• Costs <white>25 durability</white> per swing"
+      - ""
+      - "<dark_gray>Requires: Excavator 3×3"
+
+  path-maker:
+    name: "Path Maker"
+    description:
+      - "<gray>Creates a 3-wide dirt path in the"
+      - "<gray>direction you're facing."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Right-click</white> on grass/dirt with shovel"
+      - "<gray>• Path extends 3 blocks wide each click"
+
+  harvester-3x3:
+    name: "Harvester 3×3"
+    description:
+      - "<gray>Harvests mature crops in a 3×3 area"
+      - "<gray>and auto-replants them."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Break a mature crop — 3×3 activates"
+      - "<gray>• Only harvests fully grown crops"
+      - "<gray>• Uses 1 seed for replant per crop"
+
+  harvester-5x5:
+    name: "Harvester 5×5"
+    description:
+      - "<gray>Harvests mature crops in a 5×5 area."
+      - "<gray>Requires Harvester 3×3."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Break a mature crop — 5×5 activates"
+      - "<gray>• Auto-replants using seeds from drops"
+      - ""
+      - "<dark_gray>Requires: Harvester 3×3"
+
+  tiller:
+    name: "Tiller"
+    description:
+      - "<gray>Tills a 3×3 area of dirt into farmland."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Right-click</white> on dirt/grass with hoe"
+      - "<gray>• Costs <white>9 durability</white> per use"
+
+  lifesteal:
+    name: "Lifesteal"
+    description:
+      - "<gray>Heals you for 15% of damage dealt."
+      - "<gray>Only works against hostile mobs"
+      - "<gray>and players."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — heals on every hit"
+      - "<gray>• Max <white>2 hearts/second</white>"
+      - "<gray>• Doesn't work on passive mobs"
+
+  thunderstrike:
+    name: "Thunderstrike"
+    description:
+      - "<gray>After 7 consecutive hits on the same"
+      - "<gray>target, a lightning bolt strikes them"
+      - "<gray>dealing 2 extra hearts of damage."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Hit the same target 7 times"
+      - "<gray>• Counter resets if you switch targets"
+      - "<gray>• <white>10s cooldown</white> after activation"
+
+  decapitator:
+    name: "Decapitator"
+    description:
+      - "<gray>Enemies you kill may drop their head."
+      - "<gray>Players: <white>100%</white> chance."
+      - "<gray>Mobs: <white>5%</white> chance."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Kill any mob or player with this sword"
+      - "<gray>• Heads are decorative trophies"
+
+  evoker-fangs:
+    name: "Evoker Fangs"
+    description:
+      - "<gray>After 5 consecutive hits, summons a"
+      - "<gray>line of evoker fangs that deal magic"
+      - "<gray>damage (ignores armor)."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Hit the same target 5 times"
+      - "<gray>• 5 fangs, <white>3 damage</white> each"
+      - "<gray>• <white>8s cooldown</white> after activation"
+
+  cripple:
+    name: "Cripple"
+    description:
+      - "<gray>Hits slow the target down."
+      - "<gray>Jab: Slowness I for 3s."
+      - "<gray>Charge: Slowness II for 4s."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — applies on every hit"
+      - "<gray>• Charge attacks apply stronger slow"
+
+  bleed:
+    name: "Bleed"
+    description:
+      - "<gray>Hits apply bleed: 1 heart damage"
+      - "<gray>every 2 seconds for 6 seconds."
+      - "<gray>Does not stack — new hits reset the timer."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — applies on every hit"
+
+  dash-impact:
+    name: "Dash Impact"
+    description:
+      - "<gray>Charge attacks create a shockwave that"
+      - "<gray>hits all enemies within 2 blocks of"
+      - "<gray>the target for 40% damage."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Hold right-click</white> to charge, run into target"
+      - "<gray>• Only activates on charge hits"
+
+  spear-sweep:
+    name: "Spear Sweep"
+    description:
+      - "<gray>Crouching jab attacks hit all enemies"
+      - "<gray>in a 180° arc in front of you"
+      - "<gray>for 60% damage."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Crouch (Shift) + left-click</white>"
+      - "<gray>• Only works with jab, not charge"
+
+  momentum:
+    name: "Momentum"
+    description:
+      - "<gray>Charge attacks deal more damage the"
+      - "<gray>further you run. +10% per block,"
+      - "<gray>up to +100% (double damage)."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Hold right-click</white>, run far, hit target"
+      - "<gray>• Multiplier shown on action bar"
+
+  spear-evoker-fangs:
+    name: "Evoker Fangs (Spear)"
+    description:
+      - "<gray>Charge attacks summon a line of evoker"
+      - "<gray>fangs from the impact point. Magic"
+      - "<gray>damage that ignores armor."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Land a charge hit to spawn fangs"
+      - "<gray>• 5 fangs, <white>3 damage</white> each"
+      - "<gray>• <white>8s cooldown</white>"
+
+  riptide:
+    name: "Riptide"
+    description:
+      - "<gray>Right-click to launch yourself forward"
+      - "<gray>like Riptide — no water needed!"
+      - ""
+      - "<gray>Costs <aqua>1 water bucket</aqua> per use."
+      - "<gray>Free during rain."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Right-click</white> with trident"
+      - "<gray>• Cooldown: <white>{cooldown}s</white>"
+      - "<gray>• No fall damage after launch"
+      - ""
+      - "<dark_gray>Does not work with vanilla Riptide enchantment"
+    no-water-bucket: "<red>You need a water bucket to use Riptide!"
+
+  loyalty-plus:
+    name: "Loyalty+"
+    description:
+      - "<gray>Your trident returns <white>twice as fast</white>"
+      - "<gray>and <red>damages enemies</red> on the return path."
+      - ""
+      - "<gray>Requires <white>Loyalty</white> enchantment."
+      - "<gray>Return damage: <white>{damage} HP</white>"
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — throw trident normally"
+      - "<gray>• Entities near the return path take damage"
+
+  chain-lightning:
+    name: "Chain Lightning"
+    description:
+      - "<gray>On hit, lightning strikes the target"
+      - "<gray>and <yellow>chains to {chains} nearby enemies</yellow>."
+      - ""
+      - "<gray>Each chain: <white>{reduction}%</white> less damage."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Hit with melee jab or thrown trident"
+      - "<gray>• Cooldown: <white>{cooldown}s</white>"
+      - ""
+      - "<dark_gray>Works with: melee jab + thrown hits"
+
+  anchor:
+    name: "Anchor"
+    description:
+      - "<gray>On hit, <white>grounds the target</white> for"
+      - "<gray><white>{duration}s</white> — no jumping, no elytra."
+      - ""
+      - "<gray>Applies Slowness V."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Hit with melee jab or thrown trident"
+      - "<gray>• Cooldown: <white>{cooldown}s</white>"
+      - ""
+      - "<dark_gray>Target sees anchor countdown on action bar"
+    anchored-actionbar: "<dark_gray>⚓ <gray>Anchored! <white>{time}s</white>"
+
+  poseidons-call:
+    name: "Poseidon's Call"
+    description:
+      - "<gray>Throw your trident into <aqua>water</aqua> to"
+      - "<gray>create a <aqua>whirlpool</aqua> that pulls enemies"
+      - "<gray>toward the impact point."
+      - ""
+      - "<gray>Radius: <white>{radius} blocks</white>"
+      - "<gray>Duration: <white>{duration}s</white>"
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Throw trident into water"
+      - "<gray>• Cooldown: <white>{cooldown}s</white>"
+      - ""
+      - "<dark_gray>Only works when trident lands in water"
+    not-in-water: "<red>Poseidon's Call only works in water!"
+
+  magnetic-shield:
+    name: "Magnetic Shield"
+    description:
+      - "<gray>While blocking, arrows within 2 blocks"
+      - "<gray>are attracted to your shield and destroyed."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Hold right-click</white> to block"
+      - "<gray>• Only affects arrows, not tridents/fireballs"
+
+  shield-bash:
+    name: "Shield Bash"
+    description:
+      - "<gray>Sprint + block to bash enemies for"
+      - "<gray>3 hearts + massive knockback."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Sprint + hold right-click</white>, run into target"
+      - "<gray>• <white>5s cooldown</white>"
+      - ""
+      - "<dark_gray>Counter: axe hit or spear charge blocks it"
+
+  phalanx:
+    name: "Phalanx"
+    description:
+      - "<gray>While blocking, allies behind you gain"
+      - "<gray>Resistance I (damage reduction)."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Hold right-click</white> to block"
+      - "<gray>• Protects allies within 3 blocks behind you"
+
+  reflective-shield:
+    name: "Reflective Shield"
+    description:
+      - "<gray>Blocking reflects 25% of damage back."
+      - "<gray>Arrows are reflected as real projectiles."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Hold right-click</white> to block"
+      - "<gray>• Works on melee and projectile attacks"
+
+  tremor:
+    name: "Tremor"
+    description:
+      - "<gray>Smash attacks give all nearby enemies"
+      - "<gray>Slowness II and Nausea for 3 seconds."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Fall 1.5+ blocks and hit with mace"
+      - "<gray>• Affects all entities in impact radius"
+
+  seismic-slam:
+    name: "Seismic Slam"
+    description:
+      - "<gray>Smash attack AoE radius expanded to"
+      - "<gray>5 blocks. All enemies in range take"
+      - "<gray>50% of the main hit's damage."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Fall 1.5+ blocks and hit with mace"
+      - "<gray>• Larger impact zone than vanilla"
+
+  graviton-pulse:
+    name: "Graviton Pulse"
+    description:
+      - "<gray>After a smash attack, all enemies within"
+      - "<gray>6 blocks are pulled toward the impact"
+      - "<gray>point for 1.5 seconds."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Fall 1.5+ blocks and hit with mace"
+      - "<gray>• <white>15s cooldown</white>"
+      - ""
+      - "<dark_gray>Combos with: Seismic Slam"
+
+  meteor-strike:
+    name: "Meteor Strike"
+    description:
+      - "<gray>Fall 15+ blocks before smashing to set"
+      - "<gray>all enemies on fire for 5 seconds."
+      - "<gray>Fire trail during the fall."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Fall <white>15+ blocks</white> and hit with mace"
+      - "<gray>• Fire is visual — doesn't break blocks"
+
+  homing-arrow:
+    name: "Homing Arrow"
+    description:
+      - "<gray>Arrows curve slightly toward the nearest"
+      - "<gray>hostile mob or player. Corrects near-misses,"
+      - "<gray>not a full aimbot."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — all arrows track automatically"
+      - "<gray>• Only tracks hostile mobs and players"
+      - "<gray>• Doesn't work with Multishot"
+
+  explosive-arrow:
+    name: "Explosive Arrow"
+    description:
+      - "<gray>Arrows explode on impact for 5 hearts"
+      - "<gray>AoE damage. Doesn't break blocks."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — all arrows explode"
+      - "<gray>• <white>2s cooldown</white> between explosions"
+      - "<gray>• Doesn't work with Multishot"
+
+  firework-efficiency:
+    name: "Firework Efficiency"
+    description:
+      - "<gray>Firework rockets last 50% longer"
+      - "<gray>during elytra flight."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — use rockets normally"
+      - "<gray>• Same rocket, longer boost"
+
+  safe-landing:
+    name: "Safe Landing"
+    description:
+      - "<gray>75% less fall damage with elytra."
+      - "<gray>Auto-activates Slow Falling when you're"
+      - "<gray>about to crash."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — always protects you"
+      - "<gray>• Emergency Slow Fall: <white>30s cooldown</white>"
+
+  aerodynamic:
+    name: "Aerodynamic"
+    description:
+      - "<gray>30% less speed decay while gliding."
+      - "<gray>Fly further with fewer rockets."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — always active while gliding"
+
+  boost:
+    name: "Boost"
+    description:
+      - "<gray>Free speed boost while gliding —"
+      - "<gray>like a firework rocket without the rocket."
+      - "<gray>Fire trail and launch sound on activation."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Crouch (Shift)</white> while gliding"
+      - "<gray>• <white>18s cooldown</white>"
+
+  phantom-cloak:
+    name: "Phantom Cloak"
+    description:
+      - "<gray>Become invisible after 3 seconds of"
+      - "<gray>continuous flight. Nametag hidden too."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — fly for 3 seconds to cloak"
+      - "<gray>• Landing, attacking or taking damage decloaks"
+
+  sonic-boom:
+    name: "Sonic Boom"
+    description:
+      - "<gray>Fly fast enough and enemies near your"
+      - "<gray>flight path take 4 damage + knockback."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — reach high speed while gliding"
+      - "<gray>• Affects entities within 3 blocks"
+
+  night-owl:
+    name: "Night Owl"
+    description:
+      - "<gray>Permanent Night Vision."
+      - "<gray>No potions needed."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — equip the helmet"
+      - "<gray>• Toggle on/off in <white>/mods manage</white>"
+
+  aqua-lung:
+    name: "Aqua Lung"
+    description:
+      - "<gray>Permanent Water Breathing."
+      - "<gray>Breathe underwater forever."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — equip the helmet"
+
+  hunters-sight:
+    name: "Hunter's Sight"
+    description:
+      - "<gray>Hostile mobs within 15 blocks glow"
+      - "<gray>through walls. Only you can see them."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — equip the helmet"
+      - "<gray>• Does not reveal players"
+
+  vitality:
+    name: "Vitality"
+    description:
+      - "<gray>+2 extra hearts while equipped."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — equip the chestplate"
+      - "<gray>• Extra hearts lost when unequipped"
+
+  last-stand:
+    name: "Last Stand"
+    description:
+      - "<gray>Below 3 hearts: gain Resistance II"
+      - "<gray>and Strength I for 5 seconds."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — activates automatically"
+      - "<gray>• <white>60s cooldown</white>"
+
+  thorns-aura:
+    name: "Thorns Aura"
+    description:
+      - "<gray>Attackers take 1 heart damage back."
+      - "<gray>100% consistent (not random like Thorns)."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — equip the chestplate"
+
+  swift:
+    name: "Swift"
+    description:
+      - "<gray>Permanent Speed I while equipped."
+      - "<gray>Stacks with beacons and potions."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — equip the leggings"
+
+  dodger:
+    name: "Dodger"
+    description:
+      - "<gray>20% chance to completely dodge melee"
+      - "<gray>and projectile attacks (0 damage)."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — equip the leggings"
+      - "<gray>• 1s internal cooldown between dodges"
+      - "<gray>• Doesn't dodge fall/fire/environment"
+
+  featherweight:
+    name: "Featherweight"
+    description:
+      - "<gray>50% less fall damage."
+      - "<gray>Stacks with Feather Falling."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — equip the boots"
+
+  double-jump:
+    name: "Double Jump"
+    description:
+      - "<gray>Jump once more while in the air."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• <white>Press Space</white> again while airborne"
+      - "<gray>• <white>5s cooldown</white>"
+      - "<gray>• Second jump is 80% height of first"
+
+  frost-walker-plus:
+    name: "Frost Walker Plus"
+    description:
+      - "<gray>Enhanced Frost Walker: 4 block radius,"
+      - "<gray>ice lasts 10 seconds. Speed boost on ice."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — walk on water to freeze it"
+      - "<gray>• Stacks with Frost Walker enchant"
+
+  soulbound:
+    name: "Soulbound"
+    description:
+      - "<gray>This item is kept on death."
+      - "<gray>Goes directly into your inventory"
+      - "<gray>when you respawn."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — item never drops on death"
+      - "<gray>• Survives server restarts"
+
+  experienced:
+    name: "Experienced"
+    description:
+      - "<gray>+50% XP from all activities with this item."
+      - "<gray>Mining, killing, harvesting — all boosted."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — use the item normally"
+
+  unbreakable:
+    name: "Unbreakable"
+    description:
+      - "<gray>This item never loses durability."
+      - "<gray>Zero wear, lasts forever."
+      - ""
+      - "<yellow>⌨ Usage:</yellow>"
+      - "<gray>• Passive — item is indestructible"
+
+# ========================
+# Tool Type Names
+# ========================
+tool:
+  pickaxe: "Pickaxe"
+  axe: "Axe"
+  shovel: "Shovel"
+  hoe: "Hoe"
+  sword: "Sword"
+  spear: "Spear"
+  shield: "Shield"
+  mace: "Mace"
+  bow: "Bow / Crossbow"
+  helmet: "Helmet"
+  chestplate: "Chestplate"
+  leggings: "Leggings"
+  boots: "Boots"
+  elytra: "Elytra"
+  universal: "Any Tool"
+
+# ========================
+# Lore
+# ========================
+lore:
+  separator: "<dark_gray>──────────────"
+  header: "<gold>⚙ Mods:"
+  mod-entry: "<gray>• {mod}"
+  mod-entry-disabled: "<dark_gray>• <strikethrough>{mod}</strikethrough>"
+
