@@ -243,7 +243,7 @@ Row 5:  ···· [Close] ····
 Shows all mods in a category. Each mod item displays:
 - Name and description
 - Price
-- Status: **Click to buy** / **✔ Owned** / **🔒 Requires [prerequisite]**
+- Status: **Click to buy** / **✔ Owned** / **✘ Requires [prerequisite]**
 
 Click to purchase — opens a **confirmation GUI** (1-row) before withdrawing money. Green wool to confirm, red wool to cancel.
 

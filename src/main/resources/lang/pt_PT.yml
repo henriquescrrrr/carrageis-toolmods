@@ -118,7 +118,7 @@ gui:
   status:
     click-to-buy: "<green>Clica para comprar!"
     owned: "<green>✔ Adquirido"
-    locked: "<red>🔒 Requer {prerequisite}"
+    locked: "<red>✘ Requer {prerequisite}"
     disabled: "<dark_gray>✘ Mod desativado pelo servidor"
     price: "<gray>Preço: <yellow>{price}"
 
