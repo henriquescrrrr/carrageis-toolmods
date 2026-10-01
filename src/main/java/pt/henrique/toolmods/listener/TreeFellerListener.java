@@ -48,10 +48,10 @@ public class TreeFellerListener implements Listener {
         LOG_MATERIALS.addAll(Set.of(
                 Material.OAK_LOG, Material.BIRCH_LOG, Material.SPRUCE_LOG, Material.JUNGLE_LOG,
                 Material.ACACIA_LOG, Material.DARK_OAK_LOG, Material.MANGROVE_LOG, Material.CHERRY_LOG,
-                Material.PALE_OAK_LOG,
+                Material.PALE_OAK_LOG, Material.POPLAR_LOG,
                 Material.OAK_WOOD, Material.BIRCH_WOOD, Material.SPRUCE_WOOD, Material.JUNGLE_WOOD,
                 Material.ACACIA_WOOD, Material.DARK_OAK_WOOD, Material.MANGROVE_WOOD, Material.CHERRY_WOOD,
-                Material.PALE_OAK_WOOD,
+                Material.PALE_OAK_WOOD, Material.POPLAR_WOOD,
                 Material.MUSHROOM_STEM
         ));
 
@@ -64,6 +64,8 @@ public class TreeFellerListener implements Listener {
         LOG_TO_SAPLING.put(Material.MANGROVE_LOG, Material.MANGROVE_PROPAGULE);
         LOG_TO_SAPLING.put(Material.CHERRY_LOG, Material.CHERRY_SAPLING);
         LOG_TO_SAPLING.put(Material.PALE_OAK_LOG, Material.PALE_OAK_SAPLING);
+        // 26.3: one sapling for all three leaf colours; the colour is picked when it grows.
+        LOG_TO_SAPLING.put(Material.POPLAR_LOG, Material.POPLAR_SAPLING);
     }
 
     public TreeFellerListener(ToolMods plugin) {

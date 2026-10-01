@@ -13,6 +13,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -92,6 +93,16 @@ public class AreaMineListener implements Listener {
         // ========== Single Block Mode (sneaking or no Area Mine) ==========
         // Apply Auto Smelt and/or Telepathy to the single block
         if (hasAutoSmelt || hasTelepathy) {
+            // A block that stores items releases them from the vanilla removal path
+            // (BlockEntity#preRemoveSideEffects), not from getDrops(). Those item
+            // entities land in the server's capture list and are discarded when
+            // setDropItems(false) is set, so taking over the drop path for a chest,
+            // furnace, hopper, dispenser, brewing stand, jukebox, lectern, decorated
+            // pot or campfire would silently destroy its contents. Leave them to
+            // vanilla. Shulker boxes carry their contents inside the dropped item and
+            // would survive, but they go down the same branch for one consistent rule.
+            if (holdsContents(brokenBlock)) return;
+
             event.setDropItems(false);
             int xp = event.getExpToDrop();
             event.setExpToDrop(0);
@@ -109,6 +120,16 @@ public class AreaMineListener implements Listener {
                         drops, xp, hasAutoSmelt, hasTelepathy, hasSilkTouch);
             });
         }
+    }
+
+    /**
+     * True if the block stores items that {@code getDrops()} does not return.
+     * {@link org.bukkit.block.Campfire} is checked separately because it holds up to
+     * four cooking items but is not an {@link InventoryHolder}.
+     */
+    private static boolean holdsContents(Block block) {
+        var state = block.getState(false);
+        return state instanceof InventoryHolder || state instanceof org.bukkit.block.Campfire;
     }
 
     /**

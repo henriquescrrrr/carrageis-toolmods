@@ -1,7 +1,7 @@
 name: ToolMods
 version: '${version}'
 main: pt.henrique.toolmods.ToolMods
-api-version: "1.21"
+api-version: "26.3"
 description: Server-side tool modifications — area mining, tree felling, auto smelt, and more.
 author: Henrique
 dependencies:

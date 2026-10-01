@@ -33,7 +33,17 @@ public class VeinMinerListener implements Listener {
     /** Max blocks per tick for the async processing. */
     private static final int BLOCKS_PER_TICK = 10;
 
-    /** All ore block types that Vein Miner can activate on. */
+    /**
+     * All ore block types that Vein Miner can activate on.
+     * <p>
+     * SULFUR and CINNABAR are deliberately absent. Despite the names they are not
+     * ores: neither is in any {@code #minecraft:*_ores} tag, neither has an ore loot
+     * table (both drop themselves through an unconditional pool), and neither is
+     * placed by an ore feature — the noise router writes them as bulk terrain, in
+     * masses far larger than a vein. Vein Miner would flood-fill a whole sulfur cave
+     * wall up to the configured block cap on one swing, which is a different tool
+     * from the one being sold here. 26.2 added no ore block, so this set is complete.
+     */
     private static final Set<Material> ORE_BLOCKS = Set.of(
             Material.COAL_ORE, Material.DEEPSLATE_COAL_ORE,
             Material.IRON_ORE, Material.DEEPSLATE_IRON_ORE,
